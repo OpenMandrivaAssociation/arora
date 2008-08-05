@@ -5,6 +5,7 @@ License:	GPLv2+
 URL:		http://code.google.com/p/arora/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-build
 BuildRequires:	qt4-devel
+Buildrequires:	qt4-linguist
 Source:		http://arora.googlecode.com/files/%name-%version.tar.gz
 Group:		Networking/WWW
 Summary:	Cross Platform WebKit Browser
