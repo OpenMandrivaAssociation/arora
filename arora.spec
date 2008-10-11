@@ -1,13 +1,14 @@
 Name:		arora
-Version:	0.3
+Version:	0.4
 Release:	%mkrel 1
 License:	GPLv2+
 URL:		http://code.google.com/p/arora/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-build
-BuildRequires:	qt4-devel
+BuildRequires:	qt4-devel >= 3:4.4
 Buildrequires:	qt4-linguist
 Source:		http://arora.googlecode.com/files/%name-%version.tar.gz
 Group:		Networking/WWW
+Provides:	webclient
 Summary:	Cross Platform WebKit Browser
 
 %description
@@ -19,7 +20,7 @@ basic browser whose feature list includes things like "History" and
 %setup -q
 
 %build
-%qmake_qt4 PREFIX=%_prefix QMAKE_CFLAGS="%{optflags}" QMAKE_CXXFLAGS="%{optflags}" QMAKE_LFLAGS="%{?ldflags}"
+%qmake_qt4 PREFIX=%_prefix 
 %make
 
 %install
@@ -28,16 +29,6 @@ make install INSTALL_ROOT=%{buildroot}
 
 %clean
 rm -rf %{buildroot}
-
-%if %mdkversion < 200900
-%post
-%update_menus
-%endif
-
-%if %mdkversion < 200900
-%postun
-%clean_menus
-%endif
 
 %files
 %defattr(-,root,root)
