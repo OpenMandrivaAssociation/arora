@@ -1,5 +1,5 @@
 Name:		arora
-Version:	0.5
+Version:	0.6
 Release:	%mkrel 1
 License:	GPLv2+
 URL:		http://code.google.com/p/arora/
@@ -34,6 +34,10 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README
 %{_bindir}/%{name}
+%{_bindir}/arora-cacheinfo
+%{_bindir}/arora-placesimport
+%{_bindir}/googlesuggest
+%{_bindir}/htmlToXBel
 %{_datadir}/%{name}
 %{_mandir}/man1/*
 %{_datadir}/applications/%{name}.desktop
