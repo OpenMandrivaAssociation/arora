@@ -34,7 +34,9 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README
 %{_bindir}/%{name}
+%if %mdkversion >= 200910
 %{_bindir}/arora-cacheinfo
+%endif
 %{_bindir}/arora-placesimport
 %{_bindir}/googlesuggest
 %{_bindir}/htmlToXBel
