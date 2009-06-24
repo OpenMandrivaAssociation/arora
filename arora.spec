@@ -1,6 +1,6 @@
 Name:		arora
 Version:	0.7.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 URL:		http://code.google.com/p/arora/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-build
@@ -34,9 +34,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README
 %{_bindir}/%{name}
-%if %mdkversion >= 200910
 %{_bindir}/arora-cacheinfo
-%endif
 %{_bindir}/arora-placesimport
 %{_bindir}/htmlToXBel
 %{_datadir}/%{name}
