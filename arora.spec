@@ -1,5 +1,5 @@
 Name:		arora
-Version:	0.8.0
+Version:	0.9.0
 Release:	%mkrel 1
 License:	GPLv2+
 URL:		http://code.google.com/p/arora/
