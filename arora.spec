@@ -1,6 +1,6 @@
 Name:		arora
 Version:	0.11.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 URL:		http://code.google.com/p/arora/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-build
