@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Summary:	Cross Platform WebKit Browser
 Name:		arora
 Version:	0.11.0
