@@ -3,7 +3,7 @@
 Summary:	Cross Platform WebKit Browser
 Name:		arora
 Version:	0.11.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Networking/WWW
 Url:		http://code.google.com/p/arora/
