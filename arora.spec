@@ -6,7 +6,7 @@ Version:	0.11.0
 Release:	4
 License:	GPLv2+
 Group:		Networking/WWW
-Url:		http://code.google.com/p/arora/
+Url:		https://code.google.com/p/arora/
 Source0:	arora-20120617.tar.xz
 
 Buildrequires:	qt4-linguist
